@@ -1,0 +1,50 @@
+\hypertarget{structMultiSetHash}{}\doxysection{Multi\+Set\+Hash Struct Reference}
+\label{structMultiSetHash}\index{MultiSetHash@{MultiSetHash}}
+
+
+Hash functor for the \mbox{\hyperlink{classMultiSet}{Multi\+Set}} class.  
+
+
+
+
+{\ttfamily \#include $<$multiset.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::size\+\_\+t \mbox{\hyperlink{structMultiSetHash_aa5555438a1a54e764aaf86ef22385c68}{operator()}} (const \mbox{\hyperlink{classMultiSet}{Multi\+Set}} \&ms) const
+\begin{DoxyCompactList}\small\item\em Computes a hash value for a \mbox{\hyperlink{classMultiSet}{Multi\+Set}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Hash functor for the \mbox{\hyperlink{classMultiSet}{Multi\+Set}} class. 
+
+This structure provides a way to generate a hash value for \mbox{\hyperlink{classMultiSet}{Multi\+Set}} objects, which is useful for using \mbox{\hyperlink{classMultiSet}{Multi\+Set}} in unordered containers. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{structMultiSetHash_aa5555438a1a54e764aaf86ef22385c68}\label{structMultiSetHash_aa5555438a1a54e764aaf86ef22385c68}} 
+\index{MultiSetHash@{MultiSetHash}!operator()@{operator()}}
+\index{operator()@{operator()}!MultiSetHash@{MultiSetHash}}
+\doxysubsubsection{\texorpdfstring{operator()()}{operator()()}}
+{\footnotesize\ttfamily std\+::size\+\_\+t Multi\+Set\+Hash\+::operator() (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classMultiSet}{Multi\+Set}} \&}]{ms }\end{DoxyParamCaption}) const}
+
+
+
+Computes a hash value for a \mbox{\hyperlink{classMultiSet}{Multi\+Set}}. 
+
+This function iterates over each element of the \mbox{\hyperlink{classMultiSet}{Multi\+Set}}, hashes the element and its count, and combines these hashes using XOR and shifting to produce a single hash value.
+
+
+\begin{DoxyParams}{Parameters}
+{\em ms} & The \mbox{\hyperlink{classMultiSet}{Multi\+Set}} to hash. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The computed hash value. 
+\end{DoxyReturn}
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/multiset.\+hpp\item 
+src/multiset.\+cpp\end{DoxyCompactItemize}

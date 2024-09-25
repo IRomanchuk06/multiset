@@ -1,0 +1,73 @@
+# Doxyfile 1.9.2
+
+# Project related configuration
+PROJECT_NAME           = "MultiSet Documentation"
+PROJECT_BRIEF          = "Documentation for the MultiSet class and its functionalities"
+PROJECT_LOGO           = 
+OUTPUT_DIRECTORY       = docs
+CREATE_SUBDIRS         = YES
+FULL_PATH_NAMES        = NO
+STRIP_FROM_PATH        = 
+STRIP_FROM_INC_PATH    = 
+
+# Build configuration
+GENERATE_HTML          = YES
+GENERATE_RTF           = NO
+GENERATE_XML           = NO
+GENERATE_LATEX         = NO
+HTML_HEADER            = 
+HTML_FOOTER            = 
+HTML_EXTRA_STYLESHEET  = 
+HTML_STYLE             = 
+HTML_COLORSTYLE        = 
+HTML_HEADER            = 
+
+# Input configuration
+INPUT                  = src
+INPUT_ENCODING         = UTF-8
+FILE_PATTERNS          = *.cpp *.hpp
+RECURSIVE             = YES
+
+# Output configuration
+OUTPUT_DIRECTORY       = docs
+HTML_OUTPUT            = html
+LATEX_OUTPUT           = latex
+RTF_OUTPUT             = rtf
+XML_OUTPUT             = xml
+
+# Doxygen configuration options
+EXTRACT_ALL            = YES
+EXTRACT_PRIVATE        = YES
+EXTRACT_STATIC         = YES
+EXTRACT_LOCAL_CLASSES  = YES
+EXTRACT_ANON_NSPACES   = YES
+GENERATE_TREEVIEW      = YES
+
+# Comment configuration
+ALIASES                = "br=\\brief"
+ENABLE_PREPROCESSING   = YES
+MACRO_EXPANSION        = YES
+OPTIMIZE_OUTPUT_FOR_C  = YES
+OPTIMIZE_OUTPUT_FOR_FORTRAN = NO
+
+# Source browsing options
+SOURCE_BROWSER         = YES
+INLINE_INFO            = YES
+STRIP_FROM_PATH        = src
+
+# HTML configuration options
+HTML_HEADER            = 
+HTML_FOOTER            = 
+HTML_EXTRA_STYLESHEET  = 
+HTML_COLORSTYLE        = 
+HTML_USE_MDFILE        = NO
+
+# LaTeX configuration
+LATEX_HEADER           = 
+LATEX_FOOTER           = 
+LATEX_EXTRA_STYLESHEET = 
+LATEX_COMPILER         = pdflatex
+
+# Tools configuration
+GENERATE_PERLMOD      = NO
+PERLMOD_NAME          = "MultiSet Documentation"

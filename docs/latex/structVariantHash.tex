@@ -1,0 +1,50 @@
+\hypertarget{structVariantHash}{}\doxysection{Variant\+Hash Struct Reference}
+\label{structVariantHash}\index{VariantHash@{VariantHash}}
+
+
+Hash functor for std\+::variant containing string or \mbox{\hyperlink{classMultiSet}{Multi\+Set}}.  
+
+
+
+
+{\ttfamily \#include $<$multiset.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::size\+\_\+t \mbox{\hyperlink{structVariantHash_aae0ec640314c163a81531cba05740878}{operator()}} (const std\+::variant$<$ std\+::string, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classMultiSet}{Multi\+Set}} $>$$>$ \&v) const
+\begin{DoxyCompactList}\small\item\em Computes a hash value for a std\+::variant containing either a string or a shared\+\_\+ptr to \mbox{\hyperlink{classMultiSet}{Multi\+Set}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Hash functor for std\+::variant containing string or \mbox{\hyperlink{classMultiSet}{Multi\+Set}}. 
+
+This structure provides a way to generate a hash value for std\+::variant objects that can hold either a string or a shared pointer to a \mbox{\hyperlink{classMultiSet}{Multi\+Set}}. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{structVariantHash_aae0ec640314c163a81531cba05740878}\label{structVariantHash_aae0ec640314c163a81531cba05740878}} 
+\index{VariantHash@{VariantHash}!operator()@{operator()}}
+\index{operator()@{operator()}!VariantHash@{VariantHash}}
+\doxysubsubsection{\texorpdfstring{operator()()}{operator()()}}
+{\footnotesize\ttfamily std\+::size\+\_\+t Variant\+Hash\+::operator() (\begin{DoxyParamCaption}\item[{const std\+::variant$<$ std\+::string, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classMultiSet}{Multi\+Set}} $>$$>$ \&}]{v }\end{DoxyParamCaption}) const}
+
+
+
+Computes a hash value for a std\+::variant containing either a string or a shared\+\_\+ptr to \mbox{\hyperlink{classMultiSet}{Multi\+Set}}. 
+
+This function dispatches the hashing based on the type contained in the variant. If the variant holds a string, it hashes it using std\+::hash. If it holds a shared\+\_\+ptr to \mbox{\hyperlink{classMultiSet}{Multi\+Set}}, it hashes the \mbox{\hyperlink{classMultiSet}{Multi\+Set}} using \mbox{\hyperlink{structMultiSetHash}{Multi\+Set\+Hash}}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & The std\+::variant to hash. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The computed hash value. 
+\end{DoxyReturn}
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/multiset.\+hpp\item 
+src/multiset.\+cpp\end{DoxyCompactItemize}

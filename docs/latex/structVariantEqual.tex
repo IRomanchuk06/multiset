@@ -1,0 +1,52 @@
+\hypertarget{structVariantEqual}{}\doxysection{Variant\+Equal Struct Reference}
+\label{structVariantEqual}\index{VariantEqual@{VariantEqual}}
+
+
+Equality functor for std\+::variant containing string or \mbox{\hyperlink{classMultiSet}{Multi\+Set}}.  
+
+
+
+
+{\ttfamily \#include $<$multiset.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{structVariantEqual_ac75fc2892867586fcb5d0ac51adf3469}{operator()}} (const std\+::variant$<$ std\+::string, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classMultiSet}{Multi\+Set}} $>$$>$ \&lhs, const std\+::variant$<$ std\+::string, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classMultiSet}{Multi\+Set}} $>$$>$ \&rhs) const
+\begin{DoxyCompactList}\small\item\em Checks for equality between two std\+::variant objects containing either a string or a shared\+\_\+ptr to \mbox{\hyperlink{classMultiSet}{Multi\+Set}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Equality functor for std\+::variant containing string or \mbox{\hyperlink{classMultiSet}{Multi\+Set}}. 
+
+This structure provides a way to compare two std\+::variant objects for equality, handling both possible types. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{structVariantEqual_ac75fc2892867586fcb5d0ac51adf3469}\label{structVariantEqual_ac75fc2892867586fcb5d0ac51adf3469}} 
+\index{VariantEqual@{VariantEqual}!operator()@{operator()}}
+\index{operator()@{operator()}!VariantEqual@{VariantEqual}}
+\doxysubsubsection{\texorpdfstring{operator()()}{operator()()}}
+{\footnotesize\ttfamily bool Variant\+Equal\+::operator() (\begin{DoxyParamCaption}\item[{const std\+::variant$<$ std\+::string, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classMultiSet}{Multi\+Set}} $>$$>$ \&}]{lhs,  }\item[{const std\+::variant$<$ std\+::string, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classMultiSet}{Multi\+Set}} $>$$>$ \&}]{rhs }\end{DoxyParamCaption}) const}
+
+
+
+Checks for equality between two std\+::variant objects containing either a string or a shared\+\_\+ptr to \mbox{\hyperlink{classMultiSet}{Multi\+Set}}. 
+
+This function compares the values contained in the variants. If both variants hold a shared\+\_\+ptr to \mbox{\hyperlink{classMultiSet}{Multi\+Set}}, the comparison is made based on the content of the Multi\+Sets rather than their addresses.
+
+
+\begin{DoxyParams}{Parameters}
+{\em lhs} & The left-\/hand side variant to compare. \\
+\hline
+{\em rhs} & The right-\/hand side variant to compare. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the variants are equal, false otherwise. 
+\end{DoxyReturn}
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/multiset.\+hpp\item 
+src/multiset.\+cpp\end{DoxyCompactItemize}

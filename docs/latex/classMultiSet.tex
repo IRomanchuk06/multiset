@@ -1,0 +1,502 @@
+\hypertarget{classMultiSet}{}\doxysection{Multi\+Set Class Reference}
+\label{classMultiSet}\index{MultiSet@{MultiSet}}
+
+
+Class representing a multiset of elements.  
+
+
+
+
+{\ttfamily \#include $<$multiset.\+hpp$>$}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classMultiSet_ad93eb17381461bd7720ba92b581feb11}\label{classMultiSet_ad93eb17381461bd7720ba92b581feb11}} 
+using {\bfseries Element} = std\+::variant$<$ std\+::string, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classMultiSet}{Multi\+Set}} $>$ $>$
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classMultiSet_ad02c16634d645841b2d5d4d2266b13d3}{Add\+Element}} (const Element \&element)
+\begin{DoxyCompactList}\small\item\em Adds an element to the \mbox{\hyperlink{classMultiSet}{Multi\+Set}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMultiSet_a9cdf4f1cc496836bbd17554d4e725844}{Remove\+Element}} (const Element \&element)
+\begin{DoxyCompactList}\small\item\em Removes an element from the \mbox{\hyperlink{classMultiSet}{Multi\+Set}}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classMultiSet_aecf519659b9f8c4a0998091193a96c68}{Is\+Contains}} (const Element \&element) const
+\begin{DoxyCompactList}\small\item\em Checks if the \mbox{\hyperlink{classMultiSet}{Multi\+Set}} contains a specific element. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classMultiSet_a5f6b36d73da72fad666d9efe6f5d5b68}{Is\+Empty}} () const
+\begin{DoxyCompactList}\small\item\em Checks if the \mbox{\hyperlink{classMultiSet}{Multi\+Set}} is empty. \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{classMultiSet_ae01a352b91a8e28aef98203d0616476e}{Size}} () const
+\begin{DoxyCompactList}\small\item\em Gets the number of elements in the \mbox{\hyperlink{classMultiSet}{Multi\+Set}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classMultiSet}{Multi\+Set}} \mbox{\hyperlink{classMultiSet_a84b2fb53f3dfbcf4fb8a854085155fe1}{Build\+Boolean}} () const
+\begin{DoxyCompactList}\small\item\em Builds a boolean representation of the \mbox{\hyperlink{classMultiSet}{Multi\+Set}}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classMultiSet_a9e6a6b3ba34cb266d62908ff93f03de2}{operator==}} (const \mbox{\hyperlink{classMultiSet}{Multi\+Set}} \&other) const
+\begin{DoxyCompactList}\small\item\em Checks for equality between two Multi\+Sets. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classMultiSet_aad68ca6a743e8332a7c7934a7f9cea8a}{operator!=}} (const \mbox{\hyperlink{classMultiSet}{Multi\+Set}} \&other) const
+\begin{DoxyCompactList}\small\item\em Checks for inequality between two Multi\+Sets. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classMultiSet}{Multi\+Set}} \mbox{\hyperlink{classMultiSet_a7400983aab21f519f5a0a4e17fb5f57b}{operator+}} (const \mbox{\hyperlink{classMultiSet}{Multi\+Set}} \&other) const
+\begin{DoxyCompactList}\small\item\em Performs the union operation between two Multi\+Sets. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classMultiSet}{Multi\+Set}} \& \mbox{\hyperlink{classMultiSet_a577e9aa106a55e7d206c5bec8ee53b98}{operator+=}} (const \mbox{\hyperlink{classMultiSet}{Multi\+Set}} \&other)
+\begin{DoxyCompactList}\small\item\em Performs the union operation in place. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classMultiSet}{Multi\+Set}} \mbox{\hyperlink{classMultiSet_a03b7616e4e90c0cd540bff761eac8704}{operator$\ast$}} (const \mbox{\hyperlink{classMultiSet}{Multi\+Set}} \&other) const
+\begin{DoxyCompactList}\small\item\em Performs the intersection operation between two Multi\+Sets. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classMultiSet}{Multi\+Set}} \& \mbox{\hyperlink{classMultiSet_a5ec74782962588b7fae4e85a7ed24976}{operator$\ast$=}} (const \mbox{\hyperlink{classMultiSet}{Multi\+Set}} \&other)
+\begin{DoxyCompactList}\small\item\em Performs the intersection operation in place. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classMultiSet}{Multi\+Set}} \mbox{\hyperlink{classMultiSet_a426bf5b78209d2958dc7c20c1fd3d878}{operator-\/}} (const \mbox{\hyperlink{classMultiSet}{Multi\+Set}} \&other) const
+\begin{DoxyCompactList}\small\item\em Performs the difference operation between two Multi\+Sets. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classMultiSet}{Multi\+Set}} \& \mbox{\hyperlink{classMultiSet_a81a6d9dd3db6a05af65c5143da94ff31}{operator-\/=}} (const \mbox{\hyperlink{classMultiSet}{Multi\+Set}} \&other)
+\begin{DoxyCompactList}\small\item\em Performs the difference operation in place. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMultiSet_a0b30b442e321e43384691ccfc128f30c}{Set\+Elements}} (const std\+::unordered\+\_\+map$<$ Element, int, \mbox{\hyperlink{structVariantHash}{Variant\+Hash}}, \mbox{\hyperlink{structVariantEqual}{Variant\+Equal}} $>$ \&elements)
+\begin{DoxyCompactList}\small\item\em Sets the elements of the \mbox{\hyperlink{classMultiSet}{Multi\+Set}}. \end{DoxyCompactList}\item 
+const std\+::unordered\+\_\+map$<$ Element, int, \mbox{\hyperlink{structVariantHash}{Variant\+Hash}}, \mbox{\hyperlink{structVariantEqual}{Variant\+Equal}} $>$ \& \mbox{\hyperlink{classMultiSet_ad7beceaf5676a74ef9ee2e936141cb8d}{Get\+Elements}} () const
+\begin{DoxyCompactList}\small\item\em Retrieves the elements of the \mbox{\hyperlink{classMultiSet}{Multi\+Set}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\+::istream \& \mbox{\hyperlink{classMultiSet_a4a6678eb123deba47bb513662f8ae98f}{operator$>$$>$}} (std\+::istream \&is, \mbox{\hyperlink{classMultiSet}{Multi\+Set}} \&multiset)
+\begin{DoxyCompactList}\small\item\em Overloads the input stream operator for the \mbox{\hyperlink{classMultiSet}{Multi\+Set}} class. \end{DoxyCompactList}\item 
+std\+::ostream \& \mbox{\hyperlink{classMultiSet_adb49a13663353c9942d0b1dc5469ef1e}{operator$<$$<$}} (std\+::ostream \&os, const \mbox{\hyperlink{classMultiSet}{Multi\+Set}} \&multiset)
+\begin{DoxyCompactList}\small\item\em Overloads the output stream operator for the \mbox{\hyperlink{classMultiSet}{Multi\+Set}} class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class representing a multiset of elements. 
+
+The \mbox{\hyperlink{classMultiSet}{Multi\+Set}} class allows for the storage and manipulation of a collection of elements, which can be either strings or nested Multi\+Sets. It supports operations such as addition, removal, and various set operations (union, intersection, difference). 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classMultiSet_ad02c16634d645841b2d5d4d2266b13d3}\label{classMultiSet_ad02c16634d645841b2d5d4d2266b13d3}} 
+\index{MultiSet@{MultiSet}!AddElement@{AddElement}}
+\index{AddElement@{AddElement}!MultiSet@{MultiSet}}
+\doxysubsubsection{\texorpdfstring{AddElement()}{AddElement()}}
+{\footnotesize\ttfamily void Multi\+Set\+::\+Add\+Element (\begin{DoxyParamCaption}\item[{const Element \&}]{element }\end{DoxyParamCaption})}
+
+
+
+Adds an element to the \mbox{\hyperlink{classMultiSet}{Multi\+Set}}. 
+
+Adds an element to the multiset. If the element already exists, its count is incremented.
+
+This method increases the count of the specified element in the multiset.
+
+
+\begin{DoxyParams}{Parameters}
+{\em element} & The element to add.\\
+\hline
+{\em element} & The element to be added to the multiset. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classMultiSet_a84b2fb53f3dfbcf4fb8a854085155fe1}\label{classMultiSet_a84b2fb53f3dfbcf4fb8a854085155fe1}} 
+\index{MultiSet@{MultiSet}!BuildBoolean@{BuildBoolean}}
+\index{BuildBoolean@{BuildBoolean}!MultiSet@{MultiSet}}
+\doxysubsubsection{\texorpdfstring{BuildBoolean()}{BuildBoolean()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classMultiSet}{Multi\+Set}} Multi\+Set\+::\+Build\+Boolean (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Builds a boolean representation of the \mbox{\hyperlink{classMultiSet}{Multi\+Set}}. 
+
+Builds a boolean multiset where each element is present with a count of 1.
+
+This method returns a \mbox{\hyperlink{classMultiSet}{Multi\+Set}} that represents the boolean logic of the current set.
+
+\begin{DoxyReturn}{Returns}
+A \mbox{\hyperlink{classMultiSet}{Multi\+Set}} representing the boolean logic.
+
+A new \mbox{\hyperlink{classMultiSet}{Multi\+Set}} object representing the boolean version of the original multiset. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classMultiSet_ad7beceaf5676a74ef9ee2e936141cb8d}\label{classMultiSet_ad7beceaf5676a74ef9ee2e936141cb8d}} 
+\index{MultiSet@{MultiSet}!GetElements@{GetElements}}
+\index{GetElements@{GetElements}!MultiSet@{MultiSet}}
+\doxysubsubsection{\texorpdfstring{GetElements()}{GetElements()}}
+{\footnotesize\ttfamily const std\+::unordered\+\_\+map$<$ Multi\+Set\+::\+Element, int, \mbox{\hyperlink{structVariantHash}{Variant\+Hash}}, \mbox{\hyperlink{structVariantEqual}{Variant\+Equal}} $>$ \& Multi\+Set\+::\+Get\+Elements (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Retrieves the elements of the \mbox{\hyperlink{classMultiSet}{Multi\+Set}}. 
+
+This method returns a constant reference to the internal map of elements and their counts in the \mbox{\hyperlink{classMultiSet}{Multi\+Set}}.
+
+\begin{DoxyReturn}{Returns}
+A constant reference to the unordered\+\_\+map of elements and counts. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classMultiSet_aecf519659b9f8c4a0998091193a96c68}\label{classMultiSet_aecf519659b9f8c4a0998091193a96c68}} 
+\index{MultiSet@{MultiSet}!IsContains@{IsContains}}
+\index{IsContains@{IsContains}!MultiSet@{MultiSet}}
+\doxysubsubsection{\texorpdfstring{IsContains()}{IsContains()}}
+{\footnotesize\ttfamily bool Multi\+Set\+::\+Is\+Contains (\begin{DoxyParamCaption}\item[{const Element \&}]{element }\end{DoxyParamCaption}) const}
+
+
+
+Checks if the \mbox{\hyperlink{classMultiSet}{Multi\+Set}} contains a specific element. 
+
+Checks if the multiset contains a specific element.
+
+
+\begin{DoxyParams}{Parameters}
+{\em element} & The element to check for. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the element is contained in the multiset, false otherwise.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em element} & The element to check for presence in the multiset. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the element is in the multiset, false otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classMultiSet_a5f6b36d73da72fad666d9efe6f5d5b68}\label{classMultiSet_a5f6b36d73da72fad666d9efe6f5d5b68}} 
+\index{MultiSet@{MultiSet}!IsEmpty@{IsEmpty}}
+\index{IsEmpty@{IsEmpty}!MultiSet@{MultiSet}}
+\doxysubsubsection{\texorpdfstring{IsEmpty()}{IsEmpty()}}
+{\footnotesize\ttfamily bool Multi\+Set\+::\+Is\+Empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Checks if the \mbox{\hyperlink{classMultiSet}{Multi\+Set}} is empty. 
+
+Checks if the multiset is empty.
+
+\begin{DoxyReturn}{Returns}
+True if the multiset has no elements, false otherwise.
+
+true if the multiset is empty, false otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classMultiSet_aad68ca6a743e8332a7c7934a7f9cea8a}\label{classMultiSet_aad68ca6a743e8332a7c7934a7f9cea8a}} 
+\index{MultiSet@{MultiSet}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!MultiSet@{MultiSet}}
+\doxysubsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily bool Multi\+Set\+::operator!= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classMultiSet}{Multi\+Set}} \&}]{other }\end{DoxyParamCaption}) const}
+
+
+
+Checks for inequality between two Multi\+Sets. 
+
+Compares two multisets for inequality.
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & The other \mbox{\hyperlink{classMultiSet}{Multi\+Set}} to compare with. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the two Multi\+Sets are not equal, false otherwise.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em other} & The other multiset to compare with. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the multisets are not equal, false otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classMultiSet_a03b7616e4e90c0cd540bff761eac8704}\label{classMultiSet_a03b7616e4e90c0cd540bff761eac8704}} 
+\index{MultiSet@{MultiSet}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!MultiSet@{MultiSet}}
+\doxysubsubsection{\texorpdfstring{operator$\ast$()}{operator*()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classMultiSet}{Multi\+Set}} Multi\+Set\+::operator$\ast$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classMultiSet}{Multi\+Set}} \&}]{other }\end{DoxyParamCaption}) const}
+
+
+
+Performs the intersection operation between two Multi\+Sets. 
+
+Computes the intersection of two multisets.
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & The other \mbox{\hyperlink{classMultiSet}{Multi\+Set}} to intersect with. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A new \mbox{\hyperlink{classMultiSet}{Multi\+Set}} representing the intersection of both.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em other} & The other multiset to intersect with. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A new \mbox{\hyperlink{classMultiSet}{Multi\+Set}} that is the intersection of the two multisets. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classMultiSet_a5ec74782962588b7fae4e85a7ed24976}\label{classMultiSet_a5ec74782962588b7fae4e85a7ed24976}} 
+\index{MultiSet@{MultiSet}!operator$\ast$=@{operator$\ast$=}}
+\index{operator$\ast$=@{operator$\ast$=}!MultiSet@{MultiSet}}
+\doxysubsubsection{\texorpdfstring{operator$\ast$=()}{operator*=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classMultiSet}{Multi\+Set}} \& Multi\+Set\+::operator$\ast$= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classMultiSet}{Multi\+Set}} \&}]{other }\end{DoxyParamCaption})}
+
+
+
+Performs the intersection operation in place. 
+
+Updates this multiset by intersecting it with another multiset.
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & The other \mbox{\hyperlink{classMultiSet}{Multi\+Set}} to intersect with. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to this \mbox{\hyperlink{classMultiSet}{Multi\+Set}} after the intersection.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em other} & The other multiset to intersect with. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the updated multiset. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classMultiSet_a7400983aab21f519f5a0a4e17fb5f57b}\label{classMultiSet_a7400983aab21f519f5a0a4e17fb5f57b}} 
+\index{MultiSet@{MultiSet}!operator+@{operator+}}
+\index{operator+@{operator+}!MultiSet@{MultiSet}}
+\doxysubsubsection{\texorpdfstring{operator+()}{operator+()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classMultiSet}{Multi\+Set}} Multi\+Set\+::operator+ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classMultiSet}{Multi\+Set}} \&}]{other }\end{DoxyParamCaption}) const}
+
+
+
+Performs the union operation between two Multi\+Sets. 
+
+Computes the union of two multisets.
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & The other \mbox{\hyperlink{classMultiSet}{Multi\+Set}} to union with. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A new \mbox{\hyperlink{classMultiSet}{Multi\+Set}} representing the union of both.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em other} & The other multiset to unite with. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A new \mbox{\hyperlink{classMultiSet}{Multi\+Set}} that is the union of the two multisets. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classMultiSet_a577e9aa106a55e7d206c5bec8ee53b98}\label{classMultiSet_a577e9aa106a55e7d206c5bec8ee53b98}} 
+\index{MultiSet@{MultiSet}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!MultiSet@{MultiSet}}
+\doxysubsubsection{\texorpdfstring{operator+=()}{operator+=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classMultiSet}{Multi\+Set}} \& Multi\+Set\+::operator+= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classMultiSet}{Multi\+Set}} \&}]{other }\end{DoxyParamCaption})}
+
+
+
+Performs the union operation in place. 
+
+Adds elements from another multiset to this multiset (union).
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & The other \mbox{\hyperlink{classMultiSet}{Multi\+Set}} to union with. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to this \mbox{\hyperlink{classMultiSet}{Multi\+Set}} after the union.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em other} & The other multiset to add. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the updated multiset. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classMultiSet_a426bf5b78209d2958dc7c20c1fd3d878}\label{classMultiSet_a426bf5b78209d2958dc7c20c1fd3d878}} 
+\index{MultiSet@{MultiSet}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!MultiSet@{MultiSet}}
+\doxysubsubsection{\texorpdfstring{operator-\/()}{operator-()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classMultiSet}{Multi\+Set}} Multi\+Set\+::operator-\/ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classMultiSet}{Multi\+Set}} \&}]{other }\end{DoxyParamCaption}) const}
+
+
+
+Performs the difference operation between two Multi\+Sets. 
+
+Computes the difference of two multisets (this -\/ other).
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & The other \mbox{\hyperlink{classMultiSet}{Multi\+Set}} to subtract. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A new \mbox{\hyperlink{classMultiSet}{Multi\+Set}} representing the difference of both.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em other} & The other multiset to subtract. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A new \mbox{\hyperlink{classMultiSet}{Multi\+Set}} that represents the difference of the two multisets. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classMultiSet_a81a6d9dd3db6a05af65c5143da94ff31}\label{classMultiSet_a81a6d9dd3db6a05af65c5143da94ff31}} 
+\index{MultiSet@{MultiSet}!operator-\/=@{operator-\/=}}
+\index{operator-\/=@{operator-\/=}!MultiSet@{MultiSet}}
+\doxysubsubsection{\texorpdfstring{operator-\/=()}{operator-=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classMultiSet}{Multi\+Set}} \& Multi\+Set\+::operator-\/= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classMultiSet}{Multi\+Set}} \&}]{other }\end{DoxyParamCaption})}
+
+
+
+Performs the difference operation in place. 
+
+Updates this multiset by subtracting elements from another multiset.
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & The other \mbox{\hyperlink{classMultiSet}{Multi\+Set}} to subtract. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to this \mbox{\hyperlink{classMultiSet}{Multi\+Set}} after the difference.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em other} & The other multiset to subtract. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the updated multiset. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classMultiSet_a9e6a6b3ba34cb266d62908ff93f03de2}\label{classMultiSet_a9e6a6b3ba34cb266d62908ff93f03de2}} 
+\index{MultiSet@{MultiSet}!operator==@{operator==}}
+\index{operator==@{operator==}!MultiSet@{MultiSet}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool Multi\+Set\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classMultiSet}{Multi\+Set}} \&}]{other }\end{DoxyParamCaption}) const}
+
+
+
+Checks for equality between two Multi\+Sets. 
+
+Compares two multisets for equality.
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & The other \mbox{\hyperlink{classMultiSet}{Multi\+Set}} to compare with. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the two Multi\+Sets are equal, false otherwise.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em other} & The other multiset to compare with. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if both multisets are equal, false otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classMultiSet_a9cdf4f1cc496836bbd17554d4e725844}\label{classMultiSet_a9cdf4f1cc496836bbd17554d4e725844}} 
+\index{MultiSet@{MultiSet}!RemoveElement@{RemoveElement}}
+\index{RemoveElement@{RemoveElement}!MultiSet@{MultiSet}}
+\doxysubsubsection{\texorpdfstring{RemoveElement()}{RemoveElement()}}
+{\footnotesize\ttfamily void Multi\+Set\+::\+Remove\+Element (\begin{DoxyParamCaption}\item[{const Element \&}]{element }\end{DoxyParamCaption})}
+
+
+
+Removes an element from the \mbox{\hyperlink{classMultiSet}{Multi\+Set}}. 
+
+Removes an element from the multiset. If the element\textquotesingle{}s count reaches zero, it is removed from the multiset.
+
+This method decreases the count of the specified element in the multiset, removing it completely if the count reaches zero.
+
+
+\begin{DoxyParams}{Parameters}
+{\em element} & The element to remove.\\
+\hline
+{\em element} & The element to be removed from the multiset. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::runtime\+\_\+error} & If the element does not exist in the multiset. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classMultiSet_a0b30b442e321e43384691ccfc128f30c}\label{classMultiSet_a0b30b442e321e43384691ccfc128f30c}} 
+\index{MultiSet@{MultiSet}!SetElements@{SetElements}}
+\index{SetElements@{SetElements}!MultiSet@{MultiSet}}
+\doxysubsubsection{\texorpdfstring{SetElements()}{SetElements()}}
+{\footnotesize\ttfamily void Multi\+Set\+::\+Set\+Elements (\begin{DoxyParamCaption}\item[{const std\+::unordered\+\_\+map$<$ Element, int, \mbox{\hyperlink{structVariantHash}{Variant\+Hash}}, \mbox{\hyperlink{structVariantEqual}{Variant\+Equal}} $>$ \&}]{elements }\end{DoxyParamCaption})}
+
+
+
+Sets the elements of the \mbox{\hyperlink{classMultiSet}{Multi\+Set}}. 
+
+This method populates the \mbox{\hyperlink{classMultiSet}{Multi\+Set}} with a given set of elements and their counts.
+
+
+\begin{DoxyParams}{Parameters}
+{\em elements} & A map of elements and their respective counts to set. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classMultiSet_ae01a352b91a8e28aef98203d0616476e}\label{classMultiSet_ae01a352b91a8e28aef98203d0616476e}} 
+\index{MultiSet@{MultiSet}!Size@{Size}}
+\index{Size@{Size}!MultiSet@{MultiSet}}
+\doxysubsubsection{\texorpdfstring{Size()}{Size()}}
+{\footnotesize\ttfamily size\+\_\+t Multi\+Set\+::\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets the number of elements in the \mbox{\hyperlink{classMultiSet}{Multi\+Set}}. 
+
+Returns the total number of elements in the multiset, counting duplicates.
+
+\begin{DoxyReturn}{Returns}
+The size of the multiset. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classMultiSet_adb49a13663353c9942d0b1dc5469ef1e}\label{classMultiSet_adb49a13663353c9942d0b1dc5469ef1e}} 
+\index{MultiSet@{MultiSet}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!MultiSet@{MultiSet}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily std\+::ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os,  }\item[{const \mbox{\hyperlink{classMultiSet}{Multi\+Set}} \&}]{multiset }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Overloads the output stream operator for the \mbox{\hyperlink{classMultiSet}{Multi\+Set}} class. 
+
+This operator writes the contents of a \mbox{\hyperlink{classMultiSet}{Multi\+Set}} to the output stream, formatted as a comma-\/separated list of elements enclosed in braces.
+
+
+\begin{DoxyParams}{Parameters}
+{\em os} & The output stream to write to. \\
+\hline
+{\em multiset} & The \mbox{\hyperlink{classMultiSet}{Multi\+Set}} instance to output. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The modified output stream. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classMultiSet_a4a6678eb123deba47bb513662f8ae98f}\label{classMultiSet_a4a6678eb123deba47bb513662f8ae98f}} 
+\index{MultiSet@{MultiSet}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!MultiSet@{MultiSet}}
+\doxysubsubsection{\texorpdfstring{operator$>$$>$}{operator>>}}
+{\footnotesize\ttfamily std\+::istream\& operator$>$$>$ (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{is,  }\item[{\mbox{\hyperlink{classMultiSet}{Multi\+Set}} \&}]{multiset }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Overloads the input stream operator for the \mbox{\hyperlink{classMultiSet}{Multi\+Set}} class. 
+
+This operator reads a \mbox{\hyperlink{classMultiSet}{Multi\+Set}} from the input stream. The input should start with \textquotesingle{}\{\textquotesingle{} followed by elements separated by commas and ending with \textquotesingle{}\}\textquotesingle{}. Nested Multi\+Sets can also be included.
+
+
+\begin{DoxyParams}{Parameters}
+{\em is} & The input stream to read from. \\
+\hline
+{\em multiset} & The \mbox{\hyperlink{classMultiSet}{Multi\+Set}} instance to populate. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The modified input stream. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/multiset.\+hpp\item 
+src/multiset.\+cpp\end{DoxyCompactItemize}
