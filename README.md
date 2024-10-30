@@ -10,14 +10,6 @@ The **MultiSet** library is a C++ implementation of a multiset data structure, w
 - **Mathematical Operations**: Provides operations for union, intersection, and difference.
 - **Serialization**: Supports reading and writing multisets from/to streams.
 
-## Installation
-
-To use the MultiSet library, you need to include the header file in your project:
-
-```cpp
-#include "multiset.hpp"
-```
-
 ## Usage
 
 ### Creating a MultiSet
